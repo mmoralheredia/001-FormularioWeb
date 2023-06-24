@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(157, 40, 40, 0.686);
+    background-image: linear-gradient(90deg, rgba(149, 72, 72, 0.686),
+            rgba(157, 40, 40, 0.686), rgba(110, 27, 27, 0.686)), url(./img/fondo.jpg);
+    background-attachment: fixed;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+
+#title,
+#description {
+    text-shadow: 10px 10px 5px rgba(84, 32, 32, 0.685);
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 45px;
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+#description {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+/*terminado el diseño superior */
+/*Arreglos generales del formulario*/
+
+#survey-form {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 0.6rem 0.6rem 16px 0.3rem rgba(84, 32, 32, 0.685);
+    text-align: left;
+    align-content: center;
+    font-size: 23px;
+    font-weight: 550;
+    width: 650px;
+    margin: auto;
+    margin-bottom: 48px;
+    padding: 10px 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#survey-form fieldset {
+    padding: 16px;
+    margin: 16px;
+}
+
+
+div {
+    margin-bottom: 18px;
+}
+
+#personal-dates label,
+input {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#personal-dates input {
+    display: block;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#how-much-like label,
+select {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#how-much-like select {
+    display: block;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+
+/* etiquetas de radio button */
+#how-much-drink input, #how-much-drink label {
+    font-size: 20px;
+    display: inline-block;
+    margin: 8px 0px;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+#how-much-drink input{
+    margin-right: 5px;
+    width: 20px;
+    zoom: 130%;
+}
+
+#sugar-preferente label,
+select {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#sugar-preferente select {
+    display: block;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+/*etiquetas de checkbox*/
+#type-coffee input, #type-coffee label {
+    font-size: 20px;
+    display: inline-block;
+    margin: 8px 0px;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+#type-coffee input {
+    margin-right: 5px;
+    width: 20px;
+    zoom: 130%;
+}
+
+
+#opinion label,
+textarea {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#opinion textarea {
+    resize: none;
+    display: block;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#submit {
+    display: block;
+    border-radius: 8px;
+    padding: 18px;
+    color: aliceblue;
+    text-align: center;
+    background-color: gray;
+    width: 100%;
+    font-size: 16px;
+    margin: auto;
+}
+
+#submit:hover {
+    background-color: brown;}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1 id="title">Cuestionario</h1>
+    <p id="description">¿Cuales son tus preferencias sobre el café?</p>
+
+    <form id="survey-form">
+        <fieldset id="personal-dates">
+            <label id="name-label" for="name">Nombre
+                <input id="name" type="text" required placeholder="Introduce tu nombre">
+            </label>
+            <label id="email-label" for="email">Email
+                <input id="email" type="email" required placeholder="ingrese su email">
+            </label>
+            <label id="number-label" for="age">Edad (opcional)
+                <input id="number" type="number" min="13" max="120" placeholder="Edad">
+            </label>
+        </fieldset>
+
+        <fieldset id="how-much-like">
+            <div>¿Cuanto te gusta el café?</div>
+            <select name="Cuanto cafe" id="dropdown">
+                <option>(selecciona una opción)</option>
+                <option value="mucho">Mucho</option>
+                <option value="normal">Normal</option>
+                <option value="poco">Poco</option>
+                <option value="nada">Nada</option>
+            </select>
+        </fieldset>
+
+        <fieldset id="how-much-drink">
+            <div id="text-much-drink">¿Cuanto cafe consume al dia?</div>
+            <label for="1 taza">
+                <input name="cantidad" value="1 taza" id="1 taza" type="radio">1 taza
+            </label>
+            <br>
+            <label for="2 taza">
+                <input name="cantidad" value="2 taza" id="2 taza" type="radio">2 taza
+            </label>
+            <br>
+            <label for="3 taza">
+                <input name="cantidad" value="3 taza" id="3 taza" type="radio">3 taza
+            </label>
+            <br>
+            <label for="cuantas pueda">
+                <input name="cantidad" value="cuantas pueda" id="cuantas pueda" type="radio">Cuantas pueda.
+            </label>
+        </fieldset>
+
+        <fieldset id="sugar-preferente">
+            <div>¿Cuanta azúcar prefiere en el café?</div>
+            <select name="" id="dropdown">
+                <option>(selecciona una opción)</option>
+                <option value="con mucha azúcar">Con mucha azúcar</option>
+                <option value="poca azúcar">Poca azúcar</option>
+                <option value="sin nada de azúcar">Sin nada de azúcar</option>
+            </select>
+        </fieldset>
+
+        <fieldset id="type-coffee">
+            <div for="">¿Que tipos de cafes prefieres?(varias opciones): </div>
+            <label for="cafe con leche">
+                <input id="cafe con leche" value="cafe con leche" type="checkbox">Café con Leche
+            </label>
+            <br>
+            <label for="mocca">
+                <input id="mocca" value="mocca" type="checkbox">Café Mocca
+            </label>
+            <br>
+            <label for="expresso">
+                <input id="expresso" value="expreso" type="checkbox">Café Expreso
+            </label>
+            <br>
+            <label for="americano">
+                <input id="americano" value="americano" type="checkbox">Café Americano
+            </label>
+            <br>
+            <label for="puro">
+                <input id="puro" value="puro" type="checkbox">Café Puro
+            </label>
+            <br>
+            <label for="cortado">
+                <input id="cortado" value="cortado" type="checkbox">Café Cortado
+            </label>
+            <br>
+            <label for="diabolico">
+                <input id="diabolico" value="diabólico" type="checkbox">Café Diabólico
+            </label>
+        </fieldset>
+
+        <fieldset id="opinion">
+            <div for="opinion">¿Que que no debe faltar en una cafeteria?</div>
+            <textarea name="opinion" id="opinion" cols="30" rows="5" placeholder="Ejemplo: Un buen ambiente"></textarea>
+        </fieldset>
+        <fieldset id="field-submit">
+            <button id="submit">Enviar Cuestionario</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
